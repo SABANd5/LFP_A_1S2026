@@ -238,7 +238,6 @@ void generarReporte1(const vector<Curso> &listaCursos, const vector<Nota> &lista
 
     cout << "\n==========================================================\n";
     cout << "EXITO: Reporte 1 generado como 'Reporte1_Estadisticas.html'\n";
-    cout << "Buscate el archivo en el panel izquierdo de VS Code.\n";
     cout << "==========================================================\n";
 }
 
@@ -674,19 +673,19 @@ int main()
             verificarDatos(listaEstudiantes, listaCursos, listaNotas);
             break;
         case 1:
-            cout << "Ingrese la ruta del archivo de estudiantes: ";
+            cout << "Ingrese el nombre/ruta del archivo de estudiantes (ej. estudiantes.lfp): ";
             cin >> ws;          // Esto limpia los espacios basura antes de leer
             getline(cin, ruta); // Lee toda la linea, incluyendo espacios
             cargarEstudiantes(listaEstudiantes, ruta);
             break;
         case 2:
-            cout << "Ingrese la ruta del archivo de cursos: ";
+            cout << "Ingrese el nombre/ruta del archivo de cursos (ej. cursos.lfp): ";
             cin >> ws;
             getline(cin, ruta);
             cargarCursos(listaCursos, ruta);
             break;
         case 3:
-            cout << "Ingrese la ruta del archivo de notas: ";
+            cout << "Ingrese el nombre/ruta del archivo de notas (ej. notas.lfp): ";
             cin >> ws;
             getline(cin, ruta);
             cargarNotas(listaNotas, ruta);
